@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>785</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="5,1">
+   <item row="0" column="1">
+    <widget class="QComboBox" name="codeComboBox"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="inputEdit">
+     <property name="placeholderText">
+      <string>please input share code</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="5">
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>code</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>value</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>max</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>min</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>vol</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="addBtn">
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="delBtn">
+     <property name="text">
+      <string>Del</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
