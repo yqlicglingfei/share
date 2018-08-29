@@ -1,5 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QTableWidget, QTableWidgetItem
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.uic import loadUi
 import numpy as np
 import pandas as pd
@@ -98,5 +99,6 @@ class Share(QWidget):
         
 app = QApplication(sys.argv)
 w = Share()
+w.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
 w.show()
 sys.exit(app.exec())
